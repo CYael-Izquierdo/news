@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import PropTypes from "prop-types";
 import ShowMoreText from 'react-show-more-text';
 
 
@@ -58,5 +59,9 @@ const News = ({news}) => {
         </div>
     );
 }
+
+News.propTypes = {
+    news: PropTypes.object.isRequired
+};
 
 export default News;

@@ -1,5 +1,6 @@
 import React from "react";
 import News from "./News";
+import PropTypes from "prop-types";
 
 const NewsList = ({newsList}) => (
     <div className="row">
@@ -11,5 +12,10 @@ const NewsList = ({newsList}) => (
         ))}
     </div>
 );
+
+NewsList.propTypes = {
+    newsList: PropTypes.arrayOf(PropTypes.object)
+};
+
 
 export default NewsList;
